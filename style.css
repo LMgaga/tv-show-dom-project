@@ -41,3 +41,15 @@ div img{
 #searchtext{
   margin-right: 10px;
 }
+#seachtvshows{
+  float: left;
+}
+.showsView{
+  display: grid;
+  background: #f3efef;
+  grid-template-columns: repeat(3, auto);
+  cursor: pointer;
+}
+ol{
+  list-style-type: none
+}

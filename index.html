@@ -9,26 +9,26 @@
   </head>
 
   <body>
-    <div id="seach">
-          <input type="text" id="searchtext"><span>Diplaying: 10/73 episodes</span>
-    </div>
-    <div id="root">
-      <!-- <div>
-        <div>
-          <h1></h1>
-        </div>
-        <div>
-          <img>
-        </div>
-        <div>
-          <p></p>
-        </div>
-      </div> -->
-    </div>
+    <div>
+      <span>Filtering for</span><input type='text' id='filterText'><span>found 9 shows</span>
+      <div id = "showContainer">
 
+      </div>
+    </div>
+    <div id = "episodeView">
+      <div id="seach">
+          <select name="shows" id="tvshows">
+          </select>
+          <select name="tvepisodes" id="tvepisodes">
+          </select>
+        <input type="text" id="searchtext"><span>Diplaying: 10/73 episodes</span>
+      </div>
+      <div id="root">
+      </div>
+    </div>
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
-
+    <script src="shows.js"></script>
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
   </body>

@@ -53,6 +53,14 @@ function getOneShow() {
   };
 }
 
+async function getAllEpisodesForShow(showNumber){
+  let showData = undefined
+  await fetch('https://api.tvmaze.com/shows/' + showNumber + '/episodes')
+  .then((response) => response.json())
+  .then((data) => showData = data);
+  return showData
+}
+
 function getAllShows() {
   return [
     {

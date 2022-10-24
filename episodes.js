@@ -30,7 +30,13 @@ function getOneEpisode() {
     },
   };
 }
-
+async function getAllEpisodesFromServer(){
+  let movieData = undefined
+  await fetch('https://api.tvmaze.com/shows/82/episodes')
+  .then((response) => response.json())
+  .then((data) => movieData = data);
+  return movieData
+}
 function getAllEpisodes() {
   return [
     {
