@@ -61,7 +61,7 @@ function makePageForEpisodes(episodeList) {
 
 window.onload = setup;
 
-function displayAllShows(allshows){
+function displayAllShows(allShows){
  
   let showContent = ""
   allShows.forEach(show => {
